@@ -1,0 +1,95 @@
+.banner {
+
+    &__container {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        transition: 0.6s ease;
+        &.active {
+            margin-top: 520px;
+        }
+    }
+
+    .upper-maintext {
+        display: inline-block;
+        font-family: 'Kaushan Script';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 93px; 
+        color: #FFFFFF;
+        margin: 90px 0 50px 0;
+        @media only screen and (max-width: 1024px) {
+            font-size: 48px;
+            line-height: 70px;
+            margin: 60px 0 45px 0;
+        }
+        @media only screen and (max-width: 576px) {
+            margin: 45px 0 70px 0;
+            font-size: 36px;
+            line-height: 52px;
+        }
+    }
+    .maintitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 144px;
+        line-height: 176px;
+        color: #FFFFFF;
+        @media only screen and (max-width: 1024px) {
+            font-size: 96px;
+            line-height: 117px;
+        }
+        @media only screen and (max-width: 576px) {
+            font-size: 48px;
+            line-height: 59px;
+        }
+
+        &::after {
+            content: '';
+            border-bottom: 4px solid #FFFFFF;
+            width: 170px;
+            display: block;
+            margin: 85px auto 75px;
+            @media only screen and (max-width: 1024px) {
+                margin: 55px auto 50px;
+            }
+            @media only screen and (max-width: 576px) {
+                margin: 70px auto 50px;
+            }
+        }
+    }
+    .mainbutton {
+        width: 33.333%;
+        height: 80px;
+        background: inherit;
+        border: 4px solid #FFFFFF;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF;
+        margin-bottom: 110px;
+
+        &:hover {
+            color: #E4BE8D;
+            background: #FFFFFF;
+        }
+
+        &:active {
+            color: #E4BE8D;
+            background: #FFFFFF;
+            border-color: #E4BE8D;
+        }
+        @media only screen and (max-width: 1024px) {
+            margin-bottom: 75px;
+        }
+        @media only screen and (max-width: 576px) {
+            margin-bottom: 50px;
+            width: 100%;
+        }
+    }
+    
+}
