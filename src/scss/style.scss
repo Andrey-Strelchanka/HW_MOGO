@@ -12,6 +12,10 @@
 @import 'fonts.scss';
 @import 'header.scss';
 @import 'banner.scss';
+@import 'about.scss';
+@import 'futures.scss';
+@import 'amazing-services.scss';
+@import 'devices.scss';
 
 .wrapper {
     background: url(../img/main_background.jpg);
@@ -36,8 +40,8 @@
 
   .container {
     max-width: 1170px;
-    padding: 0 15px;
     margin: 0 auto;
+    padding: 0 15px;
   }
 
   .row {
@@ -47,6 +51,70 @@
 
   .column {
     padding: 0 15px;
+  }
+
+  .upper-title {
+    display: block;
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    color: #2D3033;
+    text-align: center;
+    margin: 70px 0 55px 0;
+    @media only screen and (max-width: 1024px) {
+      margin: 50px 0;
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }
+
+  .title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #2D3033;
+    text-align: center;
+    text-transform: uppercase;
+    &::after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      border-bottom: 4px solid #F38281;
+      max-width: 12.666%;
+      padding: 50px 0 0 0;
+      @media only screen and (max-width: 1024px) {
+        padding: 40px 0 0 0;
+      }
+      @media only screen and (max-width: 576px) {
+        max-width: 46%;
+      }
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  .subtitle {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 40px 0 100px 0;
+    @media only screen and (max-width: 1024px) {
+      margin: 35px 0 80px 0;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    @media only screen and (max-width: 1024px) {
+      margin: 20px 0 35px 0;
+    }
   }
 
   .banner {

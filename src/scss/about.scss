@@ -1,0 +1,100 @@
+.about {
+    text-align: center;
+
+    .about &__container {
+        padding: 0 15px 105px;
+        @media only screen and (max-width: 1024px) {
+            padding: 0 15px 90px;
+        }
+        @media only screen and (max-width: 576px) {
+            padding: 0 15px 60px; 
+        }
+    }
+
+    &__row {
+        @media only screen and (max-width: 576px) {
+            flex-direction: column; 
+        }
+    }
+
+    &__column {
+        position: relative;
+        @media only screen and (max-width: 576px) {
+            margin-bottom: 15px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__hover {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 15px;
+        left: 15px;
+        background: linear-gradient(rgba(233, 130, 131, 0.9), rgba(237, 215, 137, 0.9));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.5s ease;
+        @media only screen and (max-width: 576px) {
+            opacity: 0.9;
+            top: 68%;
+            flex-direction: row;
+            justify-content: flex-start;
+            pointer-events: none;
+        }
+        svg {
+            opacity: 0;
+            @media only screen and (max-width: 1024px) {
+                width: 33px;
+                height: auto;
+            }
+            @media only screen and (max-width: 576px) {
+                width: 30px;
+                height: auto;
+                opacity: 1;
+                margin: 0 33px 0 14px;
+            }
+        }
+        &:hover {
+            transform: translate(-16px, -16px);
+            opacity: 0.9;
+            svg {
+                opacity: 1;
+            }
+            .about__hover-text {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__hover-text {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF;
+        margin-top: 35px;
+        opacity: 0;
+        @media only screen and (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 21px;
+            margin-top: 30px;
+        }
+        @media only screen and (max-width: 576px) {
+            margin-top: 0;
+            opacity: 1;
+        }
+    }
+}
+

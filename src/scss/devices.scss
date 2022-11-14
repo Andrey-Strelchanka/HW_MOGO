@@ -1,0 +1,66 @@
+.devices {
+    background: url(../img/devices/background_devices.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 0;
+    &:after {
+      content: '';
+      position:absolute;
+      background: rgba(255, 255, 255, 0.8);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    .devices &__container {
+        position: relative;
+        z-index: 2;
+        padding: 70px 15px 60px;
+        @media only screen and (max-width: 1024px) {
+            padding: 45px 15px 40px;
+        }
+        @media only screen and (max-width: 576px) {
+            padding: 70px 15px 25px;
+        }
+    }
+
+    .devices &__upper-title {
+        margin-top: 0;
+    }
+
+    &__tablet {
+        display: block;
+        width: 58.642%;
+        height: auto;
+        margin: 60px auto 0;
+        @media only screen and (max-width: 1024px) {
+            margin: 40px auto 0;
+        }
+        @media only screen and (max-width: 576px) {
+            width: 100%;
+        }
+    }
+
+    &__phone {
+        display: block;
+        width: 17.094%;
+        height: auto;
+        position: absolute;
+        bottom: -40px;
+        right: 17.666%;
+        @media only screen and (max-width: 1024px) {
+            bottom: -30px;
+        }
+        @media only screen and (max-width: 576px) {
+            width: 26.5%;
+            right: 14.5%;
+            bottom: -25px;
+        }
+    }
+}
