@@ -1,0 +1,32 @@
+.service {
+
+    .service &__container {
+        padding-bottom: 115px;
+        @media only screen and (max-width: 1024px) {
+            padding-bottom: 90px;
+        }
+        @media only screen and (max-width: 768px) {
+            padding-bottom: 30px;
+        }
+    }
+
+    &__row {
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__column {
+        flex: 1 1 50%;
+        &:first-child {
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+}
