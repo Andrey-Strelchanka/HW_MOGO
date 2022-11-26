@@ -1,0 +1,128 @@
+.reviews {
+    background-color: #F8F8F8;
+
+    .reviews &__container {
+        padding: 40px 15px;
+        @media only screen and (max-width: 1024px) {
+            padding: 30px 15px;
+        }
+        @media only screen and (max-width: 576px) {
+            padding: 30px 15px 75px;
+        }
+    }
+
+    &__row {
+    }
+
+    &__column {
+        &:first-child {
+            flex: 1 1 20%;
+            @media only screen and (max-width: 576px) {
+                display: none;
+            }
+        }
+        &:last-child {
+            flex: 1 1 80%;
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__text {
+        font-family: 'Raleway';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #A9AFB1;
+        @media only screen and (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 21px;
+        }
+        @media only screen and (max-width: 576px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    &__low-content {
+        display: flex;
+        justify-content: flex-start;
+        margin: 20px 0 0 0;
+        @media only screen and (max-width: 1024px) {
+            margin: 15px 0 0 0;
+        }
+        @media only screen and (max-width: 576px) {
+            margin: 20px 0 0 0;
+        }
+        .low-content__line {
+            border-top: 4px solid #F38281;
+            flex: 1 1 12.5%;
+            margin: 25px 55px 0 0;
+            @media only screen and (max-width: 1024px) {
+                margin: 15px 40px 0 0;
+            }
+            @media only screen and (max-width: 576px) {
+                flex: 1 1 15%;
+                margin: 15px 35px 0 0;
+            }
+        }
+    
+        .low-content__name {
+            font-family: 'Kaushan Script';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 44px;       
+            color: #000000;
+            flex: 1 1 87.5%;
+            @media only screen and (max-width: 576px) {
+                flex: 1 1 85%;
+            }
+            @media only screen and (max-width: 1024px) {
+                font-size: 24px;
+                line-height: 35px;
+            }
+            @media only screen and (max-width: 576px) {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.reviews_background {
+    background-color: #fff;
+
+    .container {
+        padding: 125px 15px;
+        @media only screen and (max-width: 1024px) {
+            padding: 30px 15px;
+        }
+        @media only screen and (max-width: 768px) {
+            padding: 60px 15px 75px;
+        }
+    }
+
+    .row {
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    .column {
+        &:first-child {
+            display: flex;
+            flex: 1 1 20%;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        &:last-child {
+            flex: 1 1 80%;
+        }
+    }
+}
+
