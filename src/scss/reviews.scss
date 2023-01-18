@@ -11,9 +11,6 @@
         }
     }
 
-    &__row {
-    }
-
     &__column {
         &:first-child {
             flex: 1 1 20%;
@@ -95,7 +92,7 @@
 }
 
 .reviews_background {
-    background-color: #fff;
+    background-color: #FFFFFF;
 
     .container {
         padding: 125px 15px;
